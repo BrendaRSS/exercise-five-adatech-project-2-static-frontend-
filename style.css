@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: -5px 1px 15px -8px #000000;
+}
+
+.logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img{
+    width: 70px;
+    height: 40px;
+}
+
+.menu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.ul-menu-two{
+    display: none;
+}
+
+.ul-menu, .ul-menu-two{
+    list-style: none;
+    float: none;
+}
+
+.ul-menu li{
+    float: left;
+}
+
+.ul-menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #6b6969;
+    display: block;
+    text-align: center;
+    padding: 8px 20px ;
+    margin: 5px;
+    box-shadow: 0px 1px 5px 0px #ffffff;
+    border-top:  1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.ul-menu li a:hover{
+    box-shadow: 0px 1px 5px 0px #9C050B;
+    border-top:  1px solid #9C050B;
+    border-bottom: 1px solid #9C050B;
+    color: #9C050B;
+    font-size: 18px;
+}
+
+.ul-menu-two{
+    margin: 0 auto;
+}
+
+.ul-menu-two li {
+    float: left;
+    position: relative;
+}
+
+.ul-menu-two li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    width: 200px;
+    color: #6b6969;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ul-menu-two li a:hover{
+    background-color: #ffcaca;
+    color: #423c3c;
+    font-weight: 700;
+}
+
+.ul-menu-two li ul{
+    list-style: none;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    margin-top: 5px;
+}
+
+.ul-menu-two li:hover ul{
+    display: block;
+}
+
+.ul-menu-two li ul li{
+    border: 1px solid #ccc;
+    display: block;
+    width: 200px;
+    font-size: 16px;
+}
+
+.ul-menu-two li ul li:hover{
+    border-left: 1px solid #9C050B;
+}
+
+.search{
+    /* width: 20%; */
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: #dad5d5;
+    border-radius: 20px;
+}
+
+.search i{
+    color: #423c3c;
+}
+
+.search input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #423c3c;
+    font-size: 14px;
+}
+
+.search input::placeholder{
+    color: #6b6969;
+}
+
+.profile{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #6b6969;
+    padding: 8px;
+}
+
+.profile .adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.profile .adress i{
+    font-size: 14px;
+}
+
+
+.profile i{
+    color: #9C050B;
+    cursor: pointer;
+}
+
+.profile .bag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile .bag i{
+    font-size: 22px;
+}
+
+/* Break points */
+
+@media (max-width: 1400px){
+    .ul-menu li a{
+        padding: 8px 10px ;
+    }
+}
+
+@media (max-width: 1200px){
+    .ul-menu li a{
+        padding: 8px 5px ;
+    }
+
+    .profile{
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 997px){
+    .menu{
+        width: 30%;
+    }
+
+    .ul-menu li a{
+        display: none;
+    }
+
+    .profile{
+        width: 30%;
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ul-menu-two{
+        display: block;
+    }
+
+}
+
+@media (max-width: 774px){
+    header{
+        padding: 0 5px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .menu{
+        width: 50%;
+    }
+
+
+    header .logo img{
+        width: 50px;
+        height: 30px;
+    }
+
+    .profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 7px;
+    }
+
+}
+
+@media (max-width: 500px){
+    header{
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu{
+        width: 40%;
+    }
+
+    header .logo img{
+        width: 30px;
+        height: 15px;
+    }
+
+    .ul-menu-two li a{
+        width: 140px;
+    }
+
+     .ul-menu-two li ul li{
+        width: 140px;
+    }
+
+    .profile{
+        width: 20%;
+    }
+
+    .profile .bag{
+        display: none;
+    }
+
+}
