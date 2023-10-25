@@ -255,6 +255,7 @@ main .section-coupon .coupon{
 main .section-coupon .coupon img{
     width: 240px;
     height: 160px;
+    object-fit: cover;
     opacity: 0.5;
     border-radius: 30px;
 }
@@ -310,6 +311,10 @@ main .section-places .div-figures .place{
     padding: 5px 10px;
     gap: 10px;
     cursor: pointer;
+}
+
+main .section-places .div-figures .place:hover{
+    background-image: linear-gradient(#ff5b5b, #f54242, #9C050B);
 }
 
 main .section-places .div-figures figure img{
@@ -369,6 +374,11 @@ main .section-restaurants .div-restaurants figure img{
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+main .section-restaurants .div-restaurants figure figcaption a{
+    text-decoration: none;
+    color: #000000;
 }
 
 main .section-orders-placed {
@@ -532,7 +542,7 @@ footer{
 }
 
 .footer-top div{
-    width: 320px;
+    width: 280px;
 }
 
 .about-ifood, .find-it-out{
@@ -668,6 +678,126 @@ form .input-box .input:valid ~ label{
     font-weight: lighter;
     gap: 6px;
 }
+
+/* Page Restaurants */
+
+.main-page-restaurants{
+    width: 100vw;
+    min-height: 500px;
+    margin-top: 70px;
+    padding: 10px 80px; /* alterar padding no break point*/
+    margin-bottom: 30px;
+}
+
+.filters {
+    width: 100%;
+    min-height: 80px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filters ul{
+    list-style: none;
+    float: left;
+}
+
+.filters ul li{
+    position: relative;
+    float: left;
+}
+
+.filters ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    min-width: 100px;
+    font-size: 16px;
+    color: #6b6969;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.filters ul li a:hover{
+    background-color: #ffc8c8;
+    color: #f54242;
+    border: 1px solid #ffc8c8;
+}
+
+.rests{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.rests figure{
+    width: 280px;
+    height: 120px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.rests figure:hover{
+    box-shadow: 0px 2px 10px 3px #ccc;
+}
+
+.rests figure img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.rests figcaption a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.rests figcaption .rest-product, .rests figcaption .rest-time{
+    color: #6b6969;
+}
+
+.rests figcaption .rest-price{
+    color: rgb(52, 179, 52);
+    text-decoration: underline;
+}
+
+.load-rests{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 700;
+    color: #f54242;
+    border: 1px solid #ffcaca;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.load-rests:hover{
+    background-color: #f54242;
+    color: #ffffff;
+}
+
 
 /* Break points */
 
