@@ -650,6 +650,21 @@ form .input-box .input:valid ~ label{
     color: #9C050B
 }
 
+.form form button{
+    width: 60px;
+    height: 25px;
+    border: 1px solid #9C050B;
+    background-color: #9C050B;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form form button:hover{
+    background-color: #ffffff;
+    color: #9C050B;
+}
+
 .footer-bottom{
     width: 100%;
     min-height: 60px;
