@@ -28,12 +28,12 @@ git@github.com:BrendaRSS/exercise-five-adatech-project-2-static-frontend-.git
     </div>
     <br/>
     <h4>Versão Mobile</h4>
-    <div style="gap:10px; width:100vw;">
-        <img src="assets/celular1.png" alt="versão mobile header" />
-        <img src="assets/celular2.png" alt="versão mobile main" />
-        <img src="assets/celular3.png" alt="versão mobile main" />
-        <img src="assets/celular4.png" alt="versão mobile main" />
-        <img src="assets/celular5.png" alt="versão mobile footer" />
-        <img src="assets/celular6.png" alt="versão mobile footer" />
+    <div style="width:100vw;">
+        <img src="assets/celular1.png" alt="versão mobile header" style="margin:10px"/>
+        <img src="assets/celular2.png" alt="versão mobile main" style="margin:10px"/>
+        <img src="assets/celular3.png" alt="versão mobile main" style="margin:10px"/>
+        <img src="assets/celular4.png" alt="versão mobile main" style="margin:10px"/>
+        <img src="assets/celular5.png" alt="versão mobile footer" style="margin:10px"/>
+        <img src="assets/celular6.png" alt="versão mobile footer" style="margin:10px"/>
     </div>
 </div>
